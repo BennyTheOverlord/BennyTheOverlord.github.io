@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0 ;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+img {
+    border: 1rem solid #90EE90;
+    height: 25rem;
+    width: 15rem;
+}
+
+figure button {
+    padding: 1rem;
+    margin: 1rem;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:hover {
+    opacity: 1;
+}

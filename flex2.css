@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+        
+}
+body {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column-reverse;
+} 
+
+nav {
+    background-color: rgb(175, 120, 226);
+    top: 0.7rem;
+    left: 0.7rem;
+    right: 0.7rem;
+    display: flex;
+    justify-content: flex-end ;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: monospace;
+    color: white;  
+   
+}
+
+nav a {
+    margin-right: 7rem;
+}
+#absoluttVerdi {
+    position: fixed;
+}
+
+p {
+    margin-top: 300px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgb(11, 237, 230);
+}
