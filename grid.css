@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#test {
+    display: grid;
+    background-color: rgb(0, 255, 4);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px ;
+}
+
+#test > div {
+    background-color: rgba(127, 221, 255, 0.965);
+    border: 0.1rem solid black;
+}
+
+#test2 {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    gap: 5px;
+    background-color: cadetblue;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "t t t t t"
+    "v . h h h"
+    "b b b b b";
+}
+
+#test2 > div {
+        border: 0.1rem solid black;
+}
+.topp {grid-area: t;}
+.venstre {grid-area: v;}
+.høyre {grid-area: h;}
+.bunn {grid-area: b;}
