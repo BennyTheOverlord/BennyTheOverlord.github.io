@@ -1,83 +1,89 @@
-
-
+html, body {
+    margin: 0;
+    padding: 0;
+        
+}
 body {
-    background-color: rgb(0, 153, 255);
-    /*background-image: url(https://img.pikbest.com/png-images/20240717/spicy-mexican-delicious-beef-taco-with-vegetables-isolated-on-transparent-background_10671505.png!sw800);
-    background-size: 100px;*/
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column-reverse;
+} 
+
+nav {
+    background-color: rgb(175, 120, 226);
+    top: 0.7rem;
+    left: 0.7rem;
+    right: 0.7rem;
+    display: flex;
+    justify-content: flex-end ;
+    padding: 2rem;
+    font-family: monospace;
+    color: white;  
+   
 }
 
-h1{
-    color:aqua;
-    padding: 10px;
-    font-size: 4rem;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 50px;
-    background-color: whitesmoke;
-    
-
-
-
+nav a {
+    margin-right: 3rem;
+    margin-top: 0.8rem;
+}
+a:hover {
+    color: rgb(11, 237, 230);
 }
 
-.Boks {
-        width: 200px;
-        height: 200px;
-        padding: 1px;
-        margin: 1em;
-
-    }
-
-h2{
-    color:rgb(57, 240, 11)
+#absoluttVerdi {
+    position: fixed;
 }
 
-h3{
-    color: orange;
+h2 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4.7rem;
 }
 
-.box {
-    font-size: 3rem;
-    padding: 3rem;
-    margin: 1rem;
-    border: 2rem red solid;
-    
-}
-
-
-#Banansmoothie {
-    width: 100%;
-    text-align: center;
-    font-size: 3em;
-    margin: 1em;
-    
-
-    
-}
-
-button {
-    padding: 10px 20px;
-    z-index: 10;
-    background: lightgray;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: black;
-}
-
-button:hover {
-    color:red
-
-}
-
-.hexagon {
-  width: 800px;
-  height: 800px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='25,5 75,5 95,50 75,95 25,95 5,50' fill='teal' stroke='black' stroke-width='2'/></svg>");
-  background-size: contain;
-  background-repeat: no-repeat;
+h1 {
+    display: flex ;
+    justify-content: flex-start;
+    margin-left: 5rem;
   
 }
 
-.hexagon:hover {
-color: rgb(0, 255, 234);
+nav > p {
+    margin-right: auto;
+}
+
+
+#container {
+    position: relative;
+}
+
+#sirkulærBoks {
+    margin-left: 5rem;
+    margin-top: 12rem;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+        display: flex;
+            flex-direction: column;
+                position: absolute;
+}
+
+#sirkulærBoks h1 {
+    margin-left: 4rem;
+}
+#sirkulærBoks h2 {
+    margin-left: 2rem;
+}
+
+#aboutMe {
+    margin-top: 16rem;
+    margin-right: 30rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pAboutMe {
+    border: 0.1rem solid black;
 }
