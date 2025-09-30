@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.venstre {grid-area: v;}
+.høyre {grid-area: h;}
+.midt {grid-area: m;}
+.midtNede {grid-area: n;}
+.oppeHjørne {grid-area: o;}
+
+#jegTester {
+    display: grid;
+    background-color: blanchedalmond;
+    grid-template-columns:repeat(6, 1fr );
+    grid-template-rows: repeat(3, 1fr);
+    width: 40%;
+    height: 40%;
+    grid-template-areas: 
+    ". . . . . ."
+    "v v v . h n"
+    "v v v . o m";
+ 
+    gap: 0.5rem;
+}
+
+#jegTester > div {
+    border: 0.1rem solid black;
+}
+
+
