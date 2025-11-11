@@ -1,0 +1,28 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#bildeKnappContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#knapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#bilde1 {
+    width: 40rem;
+    height: 30rem;
+}
+
+#nesteBilde {
+    width: 7rem;
+}
+
+#forrigeBilde {
+    width: 7rem;
+}
