@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-Container {
+    padding: 10rem;
+    margin: 10rem;
+    background-color: aqua;
+    border: 3px solid black;
+    text-align: center;
+}
+
+#svar-Container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
+
