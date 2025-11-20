@@ -8,7 +8,7 @@ let spørsmålContainer = [
             "Kopiering av DNA før celledeling ", 
             "Nedbrytning av skadede organeller i en celle"
         ],
-        fasit: "1"
+        fasit: 1
     },
     {
         spørsmål: "Hvor mye av verdenspopulasjonen har grønne øyne?",
@@ -19,19 +19,13 @@ let spørsmålContainer = [
             "2%",
             "23%"
         ],
-        fasit: "2"
+        fasit: 2
     },
 ];
 
-// let spørsmål1 = spørsmålContainer[0];
-let aktivSpørsmål = document.getElementById("spørsmål-Container");
 
-
-
-// document.getElementById("svar1").innerText = (spørsmålContainer[0].svarAlternativer[0]);
-// document.getElementById("svar2").innerText = (spørsmålContainer[0].svarAlternativer[1]);
-// document.getElementById("svar3").innerText = (spørsmålContainer[0].svarAlternativer[2]);
-// document.getElementById("svar4").innerText = (spørsmålContainer[0].svarAlternativer[3]);
+let aktivSpørsmål = document.getElementById("spørsmål-Container"); //Brukes til å vise det aktive spørsmålet, som er satt i "spørsmål-Container" i html filen
+let aktivSpørsmålIndex = 0; //Brukes til å finne det riktige spørsmålet i arrayen, slik at man kan sjekke svaret
 
 function definerSvar(spørsmål) {
     for (let i = 0; i < spørsmålContainer[spørsmål].svarAlternativer.length; i++) {
@@ -40,4 +34,37 @@ function definerSvar(spørsmål) {
     aktivSpørsmål.innerHTML = spørsmålContainer[spørsmål].spørsmål;
 };
 
-definerSvar(1);
+definerSvar(0);
+
+function sjekkSvar(valgtSvar) {
+    let riktigSvar = spørsmålContainer[aktivSpørsmålIndex].fasit;
+
+    if (valgtSvar === riktigSvar) {
+        console.log("Du svarte riktig")
+        
+     } else {
+        console.log("Du svarte feil")
+     }
+
+    };
+
+let answer1 = document.getElementById("svar1");
+let answer2 = document.getElementById("svar2");
+let answer3 = document.getElementById("svar3");
+let answer4 = document.getElementById("svar4");
+
+answer1.addEventListener("click", function() {
+    sjekkSvar(0);
+});
+
+answer2.addEventListener("click", function() {
+    sjekkSvar(1);
+});
+
+answer3.addEventListener("click", function() {
+    sjekkSvar(2);
+});
+
+answer4.addEventListener("click", function() {
+    sjekkSvar(3);
+});
