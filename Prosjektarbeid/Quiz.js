@@ -62,10 +62,15 @@ function sjekkSvar(valgtSvar) {
 
     if (valgtSvar === riktigSvar) {
         console.log("Du svarte riktig");
+        valgtAlternativ.style.backgroundColor = "green";
 
-        aktivSpørsmålIndex++;
-        definerSvar(aktivSpørsmålIndex);
-        
+        setTimeout(function() {
+            valgtAlternativ.style.backgroundColor = "white"; //Sett in "white" igjen senere
+
+             aktivSpørsmålIndex++;
+            definerSvar(aktivSpørsmålIndex);
+        }, 1000);
+
      } else {
         console.log("Du svarte feil")
         valgtAlternativ.style.backgroundColor = "red";
