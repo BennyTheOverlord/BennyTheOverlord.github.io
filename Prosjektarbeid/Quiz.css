@@ -19,10 +19,14 @@ html, body {
 
 #spørsmål-Container {
     margin: 5rem;
-    font-family: fantasy;
+    font-family: "Times New Roman";
     font-size: 3rem;
 }
 
-
+button {
+    background-color: white;
+    border: 0px;
+    border-radius: 5%;
+}
 
 
