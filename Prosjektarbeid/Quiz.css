@@ -3,28 +3,38 @@ html, body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    height: 100vh; /*   
+    align-items: center;  /*Vertikal sentrering */
+    justify-content: center; /*Horisontal sentrering */
+}
+
 #quiz-Container {
     padding: 10rem;
     margin: 10rem;
-    background-color: aqua;
+    min-width: 300px; /*Setter en minimum bredde for quiz-Container */
+    min-height: 300px; /*Setter en minimum høyde for quiz-Container */
+    background-color: white;
+    border-radius: 1rem;
     border: 3px solid black;
     text-align: center;
 }
 
 #svar-Container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: grid; /*Bruker grid for å plassere svarene */
+    grid-template-columns: repeat(2, 1fr); /*Lager to like bredde kolonner */
+    gap: 20px;  /*Lager 20px avstand mellom knappene */
 }
 
 #spørsmål-Container {
     margin: 5rem;
-    font-family: "Times New Roman";
+    font-family: sans-serif;
     font-size: 3rem;
 }
 
 button {
     background-color: white;
-    border: 0px;
+    border: 0.1px black solid;
     border-radius: 5%;
 }

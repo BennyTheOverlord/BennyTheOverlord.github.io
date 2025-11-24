@@ -4,6 +4,9 @@
     //tema: kategorien til spørsmålet (rakk ikke å gjøren noe med dette)
     //svarAlternativer: svarmulighetene brukeren har
     //fasit: det korrekte svaret av de 4 svar alternativene
+
+    //Brukte denne videoen for ideen om objekt: https://youtu.be/_FnFPmA87XU?si=AMLU6n4IFIVFk9Z5
+
 let spørsmålContainer = [ //Definerer en variabel "spørsmålContainer", og sier at denne variabelen skal være en array 
     { 
         spørsmål: "Hva er cytokinese?",
